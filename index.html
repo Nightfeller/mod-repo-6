@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <title>Weather Site</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, Helvetica, sans-serif;
+            zoom: 2;
+        }
+    </style>
 </head>
 <body>
-    <div class="search-bar">
+    <form class="search-bar">
         <input name="city" id="city" type="text" class="form-input" />
         <button type="submit" class="search-btn">Search</button>
-    </div>
+        <div class="searched-cities"></div>
+    </form>
 
-    <div class="searched-cities"></div>
+    <!-- <div class="searched-cities"></div> -->
     
     <div class="stored-items"></div>
 
@@ -21,6 +29,10 @@
     <p class="stored-wind"></p>
     <p class="stored-humid"></p>
 
+    <div class="locally-stored-city"></div>
+
     <script src="script.js"></script>
 </body>
+
+
 </html>
